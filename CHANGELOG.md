@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to CampusOS. Dates are Asia/Dhaka. Versions follow the milestones of the hackathon build; the app itself is not published to npm.
+All notable changes to CampusOS. Dates are Asia/Dhaka. Versions follow project milestones; the app itself is not published to npm.
 
 ## 0.9.0 - Pre-submission fixes and campus calendar (2026-10-08)
 
@@ -12,9 +12,9 @@ All notable changes to CampusOS. Dates are Asia/Dhaka. Versions follow the miles
 - Chatbot: intents for "is the university open today/tomorrow", "next working day" and "which days does the bus run", in English, Banglish and Bangla.
 - Events: `confirmOffDay` / `OFF_DAY_CONFIRMATION_REQUIRED`, off-day badges, Friday-first calendar, Friday to Thursday "This week" filter.
 - `Resource.courseName` (migration `20261012000000_resource_course_name`) so a student can upload for a course that is not in the list.
-- **Contributors page** (`/contributors`, linked from the footer and a team band on the landing page): portrait, role, skills, experience and a contact link for each team member. Data lives in `src/config/contributors.ts`; photos are resized WebP files in `public/contributors/`. Each person has their batch (CSE 62, Day), an email link and a WhatsApp link for urgent contact.
+- **Developer page** (`/contributors`, linked from the footer and a developer band on the landing page): portrait, skills, highlights and contact links for Fazle Rabbi. Data lives in `src/config/contributors.ts`; portrait is a resized WebP file in `public/contributors/`. Includes batch (CSE 62, Day), email link and WhatsApp link for urgent contact.
 - **Install button in the footer** (centred): opens the browser's install prompt where it exists (Chrome, Edge, Android) and shows the manual steps elsewhere (Safari on iPhone and iPad, Firefox); hidden once the app is installed. The PWA manifest already existed.
-- **Landing page redesign:** animated colour glows, an orbiting product preview with an assistant chat card, highlight chips, a campus-week strip (Friday to Thursday, off days marked, today highlighted), richer module and scenario cards, a team band, and a shine on the main buttons. Scroll reveals use CSS scroll-driven animation (no JavaScript, content is never hidden), and everything respects `prefers-reduced-motion`.
+- **Landing page redesign:** animated colour glows, an orbiting product preview with an assistant chat card, highlight chips, a campus-week strip (Friday to Thursday, off days marked, today highlighted), richer module and scenario cards, a developer band, and a shine on the main buttons. Scroll reveals use CSS scroll-driven animation (no JavaScript, content is never hidden), and everything respects `prefers-reduced-motion`.
 - `docs/REQUIREMENTS_AUDIT.md`, `docs/SUBMISSION_CHECKLIST.md`, regression tests (`tests/unit/regressions.test.ts`, `tests/e2e/regressions.spec.ts`), calendar tests (`tests/unit/campus-calendar.test.ts`, `tests/e2e/campus-calendar.spec.ts`).
 
 ### Performance

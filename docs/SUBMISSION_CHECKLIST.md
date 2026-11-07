@@ -12,11 +12,10 @@ Everything in this list needs a person. The code cannot do it. Tick each box bef
 - [ ] Run `npm run db:seed` once against the production database so judges see demo data.
 - [ ] Smoke test on the live URL: sign up with a fresh email and receive the OTP, log in, log out, reset a password, open the `/admin/login` page with an admin account, open `/bus` and check the campus-calendar banner.
 
-## 2. Team and repository
+## 2. Repository
 
-- [ ] Every team member joins the CPCCU GitHub organisation.
-- [ ] The repository lives inside the organisation (transfer it or push a copy there).
-- [ ] Repository visibility lets the judges open it.
+- [ ] Push the repository to GitHub (`Fazle-Rabbi72`).
+- [ ] Confirm repository visibility is configured as desired.
 - [ ] `.env` is not tracked (`git ls-files .env` prints nothing) and no secret appears in the history.
 
 ## 3. Demo video
@@ -30,8 +29,8 @@ Everything in this list needs a person. The code cannot do it. Tick each box bef
 
 | Field | Where the text comes from |
 | --- | --- |
-| Team name | Nurix Hive |
-| Members | Fill in names and roles |
+| Developer | Fazle Rabbi |
+| Contact | `rabbifazle.contact@gmail.com` · GitHub: `Fazle-Rabbi72` |
 | Project name | CampusOS: a unified campus hub for City University |
 | Description | README "Overview" |
 | Problem-solution overview | README "Problem → solution scenarios" and "Real-world usability" |

@@ -1,6 +1,6 @@
 # CampusOS QA report
 
-Built by the **Nurix Hive** team for City University, Bangladesh. This report covers the admin portal and the hardening pass. Numbers marked *local* were measured on the development machine and will differ on Vercel (add network latency and the CDN).
+Built by **Fazle Rabbi** for City University, Bangladesh. This report covers the admin portal and the hardening pass. Numbers marked *local* were measured on the development machine and will differ on Vercel (add network latency and the CDN).
 
 ## 1. Result at a glance
 

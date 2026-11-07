@@ -7,7 +7,7 @@ CampusOS handles student accounts, uploaded documents and complaints, so we trea
 Please do not open a public issue for a security problem.
 
 1. Use GitHub's private reporting: open the **Security** tab of this repository and choose **Report a vulnerability**.
-2. If that is not available to you, contact the team lead (Nurix Hive) through the contact details in the hackathon submission and ask for a private channel.
+2. If that is not available to you, contact **Fazle Rabbi** (`rabbifazle.contact@gmail.com`) and ask for a private channel.
 3. Include the affected URL or file, the steps to reproduce, and what an attacker could do. Do not include real student data.
 
 We aim to acknowledge a report within 3 working days and to fix confirmed high-severity issues first. Please give us a reasonable time to fix a problem before you publish details.
@@ -36,7 +36,7 @@ The details and the evidence are in the [Security](README.md#security) and [Prod
 
 - Secrets live only in environment variables (see [`.env.example`](.env.example) for the names; it holds placeholders only).
 - `.env` and every `.env.*` file except `.env.example` are git-ignored.
-- Demo passwords are given to the judges through the submission form, never in the repository.
+- Demo passwords are kept only in local environment configuration, never in the repository.
 - If you think a secret leaked, rotate it first (Neon password, `JWT_SECRET`, Brevo key, UploadThing token, cron and revalidate secrets), then tell us.
 
 ## Known limitations

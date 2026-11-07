@@ -8,8 +8,8 @@ import { buildMetadata } from "@/config/seo";
 import { type Contributor, CONTRIBUTORS } from "@/config/contributors";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Contributors",
-  description: "Meet the Nurix Hive team behind CampusOS, the unified campus hub for City University, Bangladesh.",
+  title: "Developer",
+  description: "Meet Fazle Rabbi, the developer behind CampusOS, the unified campus hub for City University, Bangladesh.",
   path: "/contributors",
 });
 
@@ -18,17 +18,17 @@ export default function ContributorsPage() {
     <>
       <PageHeader
         variant="hero"
-        breadcrumbs={[{ label: "Home", href: "/" }, { label: "Contributors" }]}
-        eyebrow="The team"
+        breadcrumbs={[{ label: "Home", href: "/" }, { label: "Developer" }]}
+        eyebrow="Developer"
         title={
           <>
-            The people behind <span className="text-gradient">CampusOS</span>
+            The developer behind <span className="text-gradient">CampusOS</span>
           </>
         }
-        description="CampusOS is designed and built by Nurix Hive, students and engineers who wanted campus life at City University to run on one fast, honest app."
+        description="CampusOS is designed and built by Fazle Rabbi to bring campus life at City University together in one fast, reliable app."
       />
-      <section aria-label="Contributors" className="container-app py-12 sm:py-16">
-        <ul className="grid gap-8 lg:grid-cols-2">
+      <section aria-label="Developer" className="container-app py-12 sm:py-16">
+        <ul className={CONTRIBUTORS.length === 1 ? "mx-auto max-w-3xl" : "grid gap-8 lg:grid-cols-2"}>
           {CONTRIBUTORS.map((person, index) => (
             <li key={person.id} className="animate-fade-up" style={{ animationDelay: `${index * 120}ms` }}>
               <ContributorCard person={person} priority={index === 0} />

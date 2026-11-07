@@ -25,7 +25,7 @@ export default function MaintenancePage() {
         <Suspense fallback={<p className="mt-3 text-fg-muted">CampusOS is being updated.</p>}>
           <MaintenanceMessage />
         </Suspense>
-        <p className="mt-8 text-xs text-fg-subtle">Designed &amp; developed by Nurix Hive.</p>
+        <p className="mt-8 text-xs text-fg-subtle">Designed &amp; developed by Fazle Rabbi.</p>
       </div>
     </main>
   );

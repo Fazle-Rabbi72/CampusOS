@@ -12,7 +12,7 @@ const ACCOUNT_LINKS = [
   { label: "Staff console", href: "/admin/login" },
 ];
 
-const ABOUT_LINKS = [{ label: "Contributors", href: "/contributors" }];
+const ABOUT_LINKS = [{ label: "Developer", href: "/contributors" }];
 
 /** Site footer (server component, zero client JS). */
 export function SiteFooter() {
@@ -38,11 +38,11 @@ export function SiteFooter() {
       <div className="border-t border-border">
         <div className="container-app flex flex-col gap-2 py-5 text-xs text-fg-subtle sm:flex-row sm:items-center sm:justify-between">
           <p>
-            © CampusOS · City University, Bangladesh. Designed &amp; developed by the{" "}
+            © CampusOS · City University, Bangladesh. Designed &amp; developed by{" "}
             <Link href="/contributors" prefetch={false} className="font-semibold text-fg-muted underline-offset-2 transition hover:text-primary hover:underline">
-              Nurix Hive
-            </Link>{" "}
-            team.
+              Fazle Rabbi
+            </Link>
+            .
           </p>
           <p>
             Press <kbd className="rounded border border-border px-1 font-sans">Ctrl</kbd> + <kbd className="rounded border border-border px-1 font-sans">K</kbd> to search anywhere.

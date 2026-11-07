@@ -1,5 +1,5 @@
 /**
- * The people behind CampusOS, shown on /contributors.
+ * Developer profile behind CampusOS, shown on /contributors.
  *
  * Only public professional details live here. Add `links` (LinkedIn, GitHub, portfolio) when you have the URLs;
  * the page renders whatever is in the array and hides the row when it is empty.
@@ -41,21 +41,20 @@ export interface Contributor {
 }
 
 export const CONTRIBUTORS: Contributor[] = [
-  
   {
     id: "fazle-rabbi",
     name: "Fazle Rabbi",
     headline: "CSE student · Full-stack web developer",
     location: "Bangladesh",
-    photo: "/contributors/contributor-2.webp",
+    photo: "/contributors/fazle-rabbi.webp",
     photoAlt: "Portrait of Fazle Rabbi",
     summary: "A passionate CSE student who loves coding, problem-solving and building impactful software. Currently working on full-stack web applications.",
     skills: ["Python", "Django", "FastAPI", "SQL", "MySQL", "PostgreSQL", "AI/ML", "React", "Full-stack web", "AWS", "System design", "Problem solving"],
     roles: [],
     highlights: [
+      "Designed and developed CampusOS, a unified campus hub for City University.",
       "Works across the stack: Python (Django, FastAPI), SQL databases (MySQL, PostgreSQL) and AI/ML.",
       "Building full-stack web applications while learning React, AWS and system design.",
-      "Contributor on CampusOS with the Nurix Hive team, for the CPCCU hackathon.",
       "Loves exploring new technologies and working on innovative projects.",
     ],
     batch: "CSE · Batch 62 · Day",

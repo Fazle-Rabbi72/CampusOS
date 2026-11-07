@@ -25,7 +25,7 @@ function Overlay({ message }: { message: string | null }) {
           We will be right back
         </h1>
         <p className="mt-3 text-fg-muted">{message ?? "CampusOS is being updated. Please check back in a few minutes."}</p>
-        <p className="mt-8 text-xs text-fg-subtle">Designed &amp; developed by Nurix Hive.</p>
+        <p className="mt-8 text-xs text-fg-subtle">Designed &amp; developed by Fazle Rabbi.</p>
       </div>
     </div>
   );

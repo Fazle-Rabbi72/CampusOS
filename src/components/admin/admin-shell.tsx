@@ -131,7 +131,7 @@ export function AdminShell({ children }: { children: ReactNode }) {
             <ChevronsLeft className={cn("size-4 transition-transform", collapsed && "rotate-180")} aria-hidden />
             <span className={cn(collapsed && "sr-only")}>Collapse</span>
           </button>
-          <p className={cn("px-3 pt-2 text-[0.65rem] text-fg-subtle", collapsed && "sr-only")}>Built by Nurix Hive</p>
+          <p className={cn("px-3 pt-2 text-[0.65rem] text-fg-subtle", collapsed && "sr-only")}>Built by Fazle Rabbi</p>
         </div>
       </aside>
 

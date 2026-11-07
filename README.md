@@ -2,14 +2,13 @@
 
 **One hub for campus life at City University, Bangladesh.** Events and clubs, academic resources, notices, bus schedules, lost and found, complaints, and an "Ask CampusOS" assistant live in one fast, mobile-first web app, instead of being scattered across Facebook groups, Google Forms and notice boards.
 
-Built by **Nurix Hive** for the CPCCU AI-Powered Web App Development & Deployment Hackathon 2026.
+Designed and built by **Fazle Rabbi** for City University, Bangladesh.
 
 | | |
 | --- | --- |
 | **Live app** | https://campusos-tawny.vercel.app |
-| **Demo accounts** | One per role (student, club admin, moderator, admin, super admin). The seed creates them from the `.env` values listed in [Seed and demo credentials](#seed-and-demo-credentials). The passwords are given to the judges in the submission form, not in this repository. |
-| **Demo video** | See `demovideoscript.md` for the walkthrough; the public Drive link is in the submission form. |
-| **Not built (on purpose)** | The optional AI bonus ideas. See [`pending.md`](pending.md). |
+| **Developer** | **Fazle Rabbi** ([GitHub](https://github.com/Fazle-Rabbi72) · [LinkedIn](https://linkedin.com/in/fazle-rabbi-852616252) · `rabbifazle.contact@gmail.com`) |
+| **Demo accounts** | One per role (student, club admin, moderator, admin, super admin). The seed creates them from the `.env` values listed in [Seed and demo credentials](#seed-and-demo-credentials). |
 
 ---
 
@@ -1992,8 +1991,8 @@ Every mutation shows a toast (`toastPromise` wraps `toast.promise`). Uploads: im
 
 | Area | Route | Notes |
 | --- | --- | --- |
-| Landing | `/` | Animated hero, live stats, this-week events, next-bus widget, campus-week strip (Friday to Thursday, today highlighted), notices ticker, module cards, FAQ preview, team band |
-| Contributors | `/contributors` | The Nurix Hive team: portrait, batch, role, skills, experience, highlights, an email link and a WhatsApp link for urgent contact (data in `src/config/contributors.ts`) |
+| Landing | `/` | Animated hero, live stats, this-week events, next-bus widget, campus-week strip (Friday to Thursday, today highlighted), notices ticker, module cards, FAQ preview, developer band |
+| Developer | `/contributors` | Fazle Rabbi's profile: portrait, batch, skills, highlights, an email link and a WhatsApp link for urgent contact (data in `src/config/contributors.ts`) |
 | Events | `/events`, `/events/[slug]`, `/clubs`, `/clubs/[slug]` | Grid, list and month-calendar views, URL-synced filters, countdown, capacity bar, optimistic register or cancel, QR ticket, `.ics` and Google Calendar, share, related events, Event JSON-LD |
 | Resources | `/resources`, `/resources/[id]` | Sidebar filters (sheet on mobile), typo-tolerant search with highlighting, "Previous questions" shortcut, lazy PDF preview, download, bookmark, report |
 | Helpdesk | `/helpdesk`, `/helpdesk/[id]` | Category chips with counts, highlighted search, accordion answers, *Was this helpful?*, *Ask the assistant*, FAQPage JSON-LD |
@@ -2162,8 +2161,8 @@ npm run docs:verify-db      # databasedesign.md matches prisma/schema.prisma
 npm run docs:verify-readme  # every route, env variable and npm script in this README is real
 ```
 
-Other documents: [`databasedesign.md`](databasedesign.md) (schema), [`docs/REQUIREMENTS_AUDIT.md`](docs/REQUIREMENTS_AUDIT.md) (hackathon requirements vs. code), [`docs/SUBMISSION_CHECKLIST.md`](docs/SUBMISSION_CHECKLIST.md) (manual steps), [`pending.md`](pending.md) (not built, in Bangla), [`demovideoscript.md`](demovideoscript.md) (demo script, in Bangla), [`SECURITY.md`](SECURITY.md), [`CONTRIBUTING.md`](CONTRIBUTING.md) and [`CHANGELOG.md`](CHANGELOG.md).
+Other documents: [`databasedesign.md`](databasedesign.md) (schema), [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) (architecture), [`docs/TESTING.md`](docs/TESTING.md) (testing), [`docs/QA_REPORT.md`](docs/QA_REPORT.md) (QA report), [`SECURITY.md`](SECURITY.md), [`CONTRIBUTING.md`](CONTRIBUTING.md) and [`CHANGELOG.md`](CHANGELOG.md).
 
 ## Credits
 
-Designed and developed by the **Nurix Hive** team for City University, Bangladesh.
+Designed and developed by **Fazle Rabbi** for City University, Bangladesh.

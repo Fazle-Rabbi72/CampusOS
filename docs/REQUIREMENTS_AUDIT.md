@@ -41,8 +41,8 @@ Audited against the two hackathon PDFs: the **Rulebook** and the **Problem State
 | D-07 | README section "real-world usability for a CU student" with concrete scenarios | Problem statement | DONE | README "Real-world usability for a CU student": 9 named scenarios with the steps and the module used | None |
 | D-08 | Demo video script (Problem, Solution, Demo, Features, Technical) | Problem statement | DONE | `demovideoscript.md`: 21 segments, 12:00 total, 5:00 cut, pre-recording checklist | Recording is D-09 |
 | D-09 | Record the video and share a public Google Drive link | Problem statement | MANUAL | Script is ready (D-08) | Record, upload, set sharing to "anyone with the link" |
-| D-10 | Join the CPCCU GitHub organisation; repo inside the org | Problem statement, Submission | MANUAL | None | Team lead joins the org and transfers or pushes the repo (checklist) |
-| D-11 | Submission form: team name, members, project name, description, problem-solution overview, live link, repo link, demo credentials, tech stack, short documentation | Rulebook | MANUAL | `docs/SUBMISSION_CHECKLIST.md` lists every field with the source text | Fill the form |
+| D-10 | Publish repository on GitHub | Project setup | MANUAL | None | Push the repository under `Fazle-Rabbi72` |
+| D-11 | Project metadata: developer, project name, description, problem-solution overview, live link, repo link, demo credentials, tech stack, short documentation | Project docs | MANUAL | `docs/SUBMISSION_CHECKLIST.md` lists every field with the source text | Complete checklist |
 | D-12 | Short documentation | Rulebook | DONE | `README.md`, `databasedesign.md`, `docs/ARCHITECTURE.md`, `docs/TESTING.md`, `docs/QA_REPORT.md` | None |
 
 ## C. Rulebook: judging criteria (what the evidence supports)
@@ -61,7 +61,7 @@ Audited against the two hackathon PDFs: the **Rulebook** and the **Problem State
 | ID | Requirement | Source | Status | Evidence | Action |
 | --- | --- | --- | --- | --- | --- |
 | R-01 | Do not collect unnecessary personal information | Rulebook, security and privacy | DONE | Signup asks for name, email, and optionally department, batch and student ID; complaints support anonymous mode; the phone number in the profile is optional and no address is stored | None |
-| R-02 | AI use is allowed; original work and no plagiarism | Rulebook | DONE | Source is the team's own; third-party libraries are listed in `package.json` | Credits section in README |
+| R-02 | AI use is allowed; original work and no plagiarism | Rulebook | DONE | Original work by Fazle Rabbi; third-party libraries are listed in `package.json` | Credits section in README |
 | R-03 | Secure handling of secrets | Rulebook | DONE | `.env` ignored, `.env.example` placeholders only | Secret scan in Step 7 |
 | R-04 | Reasonable security (hashing, rate limiting, CSRF/origin checks) | Rulebook | DONE | bcrypt (cost 12) password hashing (`password.test.ts`), DB-backed rate limits, Turnstile, honeypot, origin checks | `SECURITY.md` in Step 7 |
 | R-05 | Works on mobile | Rulebook, UI/UX | DONE | Mobile tab bar, responsive layouts, a11y suite runs at mobile width | None |

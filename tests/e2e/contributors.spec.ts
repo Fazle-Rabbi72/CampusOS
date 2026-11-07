@@ -1,12 +1,12 @@
 import { expect, settle, test } from "./fixtures";
 
-test.describe("Contributors page and landing", () => {
-  test("footer links to the contributors page, which shows both people with their photos", async ({ page }) => {
+test.describe("Developer page and landing", () => {
+  test("footer links to the developer page, which shows Fazle Rabbi with his photo", async ({ page }) => {
     await page.goto("/");
     await settle(page);
-    await page.getByRole("contentinfo").getByRole("link", { name: "Contributors" }).click();
+    await page.getByRole("contentinfo").getByRole("link", { name: "Developer" }).click();
     await page.waitForURL("**/contributors");
-    await expect(page.getByRole("heading", { level: 1 })).toContainText("The people behind CampusOS");
+    await expect(page.getByRole("heading", { level: 1 })).toContainText("The developer behind CampusOS");
 
     for (const name of ["Fazle Rabbi"]) {
       const card = page.getByRole("article", { name });
@@ -16,10 +16,10 @@ test.describe("Contributors page and landing", () => {
       await expect.poll(() => photo.evaluate((image: HTMLImageElement) => image.naturalWidth)).toBeGreaterThan(100);
       await expect(card.getByRole("link", { name: /@gmail\.com$/ })).toHaveAttribute("href", /^mailto:/);
     }
-    // Urgent contact: a WhatsApp link per person (wa.me), and the batch is shown.
-    await expect(page.getByRole("link", { name: /WhatsApp .* for urgent contact/ })).toHaveCount(2);
+    // Urgent contact: WhatsApp link (wa.me), and the batch is shown.
+    await expect(page.getByRole("link", { name: /WhatsApp .* for urgent contact/ })).toHaveCount(1);
     await expect(page.getByRole("link", { name: /Fazle Rabbi for urgent contact/ })).toHaveAttribute("href", "https://wa.me/8801736208819");
-    await expect(page.getByText("CSE · Batch 62 · Day")).toHaveCount(2);
+    await expect(page.getByText("CSE · Batch 62 · Day")).toHaveCount(1);
   });
 
   test("landing: live sections fill in after load (stats, events, next bus, campus week)", async ({ page }) => {
@@ -31,7 +31,7 @@ test.describe("Contributors page and landing", () => {
     await expect(page.getByRole("link", { name: "Full timetable & stop finder" })).toBeVisible();
     await expect(page.getByRole("list", { name: "Campus week, Friday to Thursday" }).getByRole("listitem")).toHaveCount(7);
     await expect(page.locator("[aria-current='date']")).toHaveCount(1);
-    await expect(page.getByRole("link", { name: "Meet the team" })).toBeVisible();
+    await expect(page.getByRole("link", { name: "About the developer" })).toBeVisible();
   });
 
   test("footer has a centred install button that explains how to install when the browser gives no prompt", async ({ page }) => {
